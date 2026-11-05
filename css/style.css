@@ -517,3 +517,49 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Career-focused content additions, preserving the original navy/cyan appearance. */
+.skip-link{position:fixed;top:-70px;left:12px;z-index:2000;background:#00f2fe;color:#061017;padding:10px 16px;border-radius:8px;font-weight:700;text-decoration:none}
+.skip-link:focus{top:10px}
+:focus-visible{outline:2px solid #00f2fe;outline-offset:4px}
+#menu-icon{border:0;background:none;padding:5px;line-height:1}
+.nav-items{display:flex;gap:30px;list-style:none;align-items:center}
+.hero-content{max-width:720px}
+.hero-summary{color:var(--text-main);font-size:1.05rem;max-width:640px;line-height:1.75;margin:15px 0 20px}
+.subtitle{color:var(--text-muted);font-size:1.08rem;font-weight:500;letter-spacing:.02em}
+.experience-container{max-width:970px;margin:0 auto}
+.experience-card{padding:38px}
+.experience-topline{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+.experience-card h3{font:700 1.5rem var(--font-heading);margin:8px 0 2px}
+.experience-org{font-weight:600;color:var(--text-main)!important}
+.experience-date{border:1px solid var(--accent-glow);color:var(--accent-color);border-radius:20px;padding:6px 12px;font-size:.82rem;white-space:nowrap}
+.experience-card p{color:var(--text-muted);margin:14px 0;line-height:1.7}
+.experience-card ul{color:var(--text-muted);margin:14px 0 10px 24px;line-height:1.65}
+.experience-card li{padding:4px 0}
+.experience-card .experience-note{font-size:.85rem;border-top:1px solid var(--card-border);padding-top:15px;margin-top:15px}
+.project-aside{max-width:960px;margin:28px auto 0;color:var(--text-muted);font-size:.92rem;line-height:1.8;border-left:2px solid rgba(0,242,254,.4);padding:9px 22px}
+.project-aside a{color:var(--text-main);text-underline-offset:3px}
+.muted-label{color:var(--accent-color);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;margin-right:10px}
+.answers-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;max-width:1150px;margin:0 auto}
+.answer-card{padding:25px}.answer-card h3{font:700 1.05rem var(--font-heading);margin-bottom:12px}.answer-card p{color:var(--text-muted);font-size:.93rem}
+section[id]{scroll-margin-top:85px}
+@media(max-width:992px){.hero-summary{margin-left:auto;margin-right:auto}.experience-topline{flex-direction:column}.answers-grid{grid-template-columns:1fr}}
+@media(max-width:768px){.nav-items{flex-direction:column;gap:15px;align-items:flex-start}.hero-content h1{font-size:clamp(2.45rem,9vw,3.2rem)}.home{padding-top:130px}.experience-card{padding:26px}.project-aside{padding-left:15px}.hero-img-wrapper{width:250px;height:250px}}
+@media(max-width:380px){section{padding:75px 6% 45px}.hero-content h1{font-size:2.2rem}.btn{padding:10px 15px}.about-card{padding:24px}.skills-grid,.portfolio-grid{grid-template-columns:minmax(0,1fr)}.hero-img-wrapper{width:210px;height:210px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Reliable mobile menu glyph even if third-party icon CSS cannot load. */
+@media(max-width:768px){#menu-icon{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;flex:0 0 auto;color:var(--accent-color)}#menu-icon::before{content:"\2630"!important;font-family:Arial,sans-serif!important;font-size:1.5rem!important;line-height:1!important}#menu-icon.bx-x::before{content:"\00D7"!important;font-size:2rem!important}}
+
+/* CV-aligned content blocks: no theme or layout replacement */
+.credentials{margin-top:24px;padding:30px 36px}
+.credential-intro h3{font:700 1.4rem var(--font-heading);margin:10px 0}
+.credential-intro p,.credentials p{color:var(--text-muted);line-height:1.7}
+.credential-columns{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:35px;margin-top:22px;padding-top:20px;border-top:1px solid var(--card-border)}
+.credential-columns h4{font:700 1rem var(--font-heading);color:var(--text-main);margin-bottom:10px}
+.credential-columns h4:not(:first-child){margin-top:24px}
+.credential-columns ul{margin:0 0 0 21px;color:var(--text-muted);line-height:1.65}
+.credential-columns li{padding:2px 0}
+@media (max-width:680px){.credential-columns{grid-template-columns:1fr;gap:22px}.credentials{padding:25px}.home .subtitle{line-height:1.6}}
+.answers-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:700px){.answers-grid{grid-template-columns:1fr}}

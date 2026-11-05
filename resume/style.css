@@ -353,3 +353,22 @@ section:last-child {
 	-moz-animation-delay: 0, 2.5s;
 	animation-delay: 0, 2.5s;
 }
+/* Targeted résumé usability fixes; retains the source résumé typography and colour scheme. */
+.sectionTitle h2{font-family:'Rokkitt',Helvetica,Arial,sans-serif;font-style:italic;font-size:1.5em;color:#cf8a05}.sectionContent h3{font-family:'Rokkitt',Helvetica,Arial,sans-serif;font-size:1.5em;margin-bottom:-2px}.sectionContent article{margin-bottom:18px}.sectionContent article ul{padding-left:19px;margin:9px 0 20px;color:#444;line-height:1.55}
+.sectionContent article li{padding:2px 0}.keySkills{column-count:1!important}.keySkills li{margin-bottom:6px}
+#name h2{font-size:1.38em;line-height:1.25;max-width:330px}
+@media(max-width:850px){#name{max-width:100%}#contactDetails{float:none;clear:both;padding-top:13px}#headshot{width:78px}.mainDetails{padding:22px}}
+@media(max-width:601px){#name h1{line-height:1.15}#name h2{max-width:none;margin-top:5px;font-size:1.2em}#contactDetails{text-align:left;overflow-wrap:anywhere}#cv{min-width:0}}
+@media(prefers-reduced-motion:reduce){.instaFade,.quickFade{animation:none!important}}
+@media print{html,body{background:#fff!important}#cv{width:100%;max-width:none;margin:0;background:#fff}.instaFade,.quickFade{animation:none!important}.mainDetails{background:#fff}section{break-inside:avoid}a{color:#222!important}}
+
+/* CV-aligned details, original print-style resume preserved */
+.sectionTitle h2{font-family:'Rokkitt',Helvetica,Arial,sans-serif;font-size:1.45em;font-style:italic;color:#b37b00}
+.sectionContent h3{font-family:'Rokkitt',Helvetica,Arial,sans-serif;font-size:1.35em;font-weight:700;margin-bottom:5px}
+.sectionContent ul:not(.keySkills){margin:0 0 20px 18px;color:#444;line-height:1.48}
+.sectionContent li{margin-bottom:5px}
+.keySkills{columns:1;list-style:disc;margin-left:18px}
+.keySkills li{margin:0 0 9px}
+.sectionContent strong{font-weight:700}
+@media(max-width:601px){#mainArea{padding:0 22px}.mainDetails{padding:22px 20px}#name h2{font-size:1.25em}.sectionTitle h2{margin-bottom:10px}}
+@media print{html,body{background:white!important}#cv{width:100%;max-width:none;margin:0;box-shadow:none;background:white}.mainDetails{background:white}a{color:#222!important}section{break-inside:avoid}#mainArea{padding:0 25px}}
